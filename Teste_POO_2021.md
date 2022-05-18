@@ -298,7 +298,7 @@ public Collection<SmartDevice> getDevicesInComodo(String nomeDoComodo) {
 
 ```java
 class CasaInteligente {
-    ...
+    //...
     private static class DeviceNotFound extends Exception {}
     public void remove(String id) throws DeviceNotFound {
         SmartDevice d = this.devices.stream().filter(s -> s.id().toString().equals(id)).findAny().orElseThrow(DeviceNotFound::new);
@@ -330,7 +330,6 @@ public void remove(String id) throws DeviceNotFound {
 public Iterator<SmartDevice> devicesPorConsumoCrescente() {
     return this.devices.stream().map(SmartDevice::clone).sorted(Comparator.comparingDouble(SmartDevice::totalConsumo)).iterator();
 }
-
 
 //Comparator.comparingDouble(SmartDevice::totalConsumo) ≡ (d1,d2) -> Double.compare(d1.totalConsumo(),d2.totalConsumo())
 ```
