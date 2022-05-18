@@ -15,8 +15,7 @@ correcta:
 
 ### 1 __Resposta__
 
-antepenultima (c)
-
+c) (antepenultima)
 
 ```java
 public double mediaGolos(String num) throws JogadorNaoExisteException {
@@ -67,7 +66,6 @@ public double mediaGolos(String num) {
 
 Nao declara throw da exception na assinatura (só funcionaria se `JogadorNaoExisteException extends RuntimeException`).
 
-
 ### 1e)
 
 ```
@@ -91,8 +89,6 @@ public List<Jogador> getConvocados() {
     return this.convocados;
 }
 ```
-
-e 
 
 ```java
 public void setConvocados(List<Jogador> conv) {
@@ -204,7 +200,7 @@ Retornamos uma `List<Veiculo>` mas na assinatura dizemos que retornamos `Set<Vei
 
 ### 5 __Resposta__
 
-ultima
+d) (ultima)
 
 ```java
 public Video getVideo(String user, String codVideo)
@@ -274,7 +270,10 @@ class CasaInteligente {
 
 ## 7
 
-https://plantuml-server.kkeisuke.dev/svg/TS_D2i8m30VmUvuYHx_w0ZB6OBjus6bFKDim0sqtcZWGyTqj2YA3dKAItp-GHjHclSS0D_Q456TzOAHufIm0hHLxIKg1Hoe53yRW44kWeuKT0RXWHN3Dde1uN4ztxHG2EUKfLNytwdt11lsd4JpZ1ligNbZAfllftixLe9dJUDe8rl22Xf8lFxu1.svg
+![](Teste_POO_2021.svg)
+
+<!-- https://plantuml-server.kkeisuke.dev/svg/TS_D2i8m30VmUvuYHx_w0ZB6OBjus6bFKDim0sqtcZWGyTqj2YA3dKAItp-GHjHclSS0D_Q456TzOAHufIm0hHLxIKg1Hoe53yRW44kWeuKT0RXWHN3Dde1uN4ztxHG2EUKfLNytwdt11lsd4JpZ1ligNbZAfllftixLe9dJUDe8rl22Xf8lFxu1.svg -->
+
 ```puml
 @startuml
 hide empty members
