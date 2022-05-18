@@ -1,4 +1,10 @@
-# Proposta de Resolucao (Work in Progress) para Teste de Programacao Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 21/05/2021
+# Teste 20-21
+
+Proposta de Resolucao (Nao está corrijida).
+
+Avaliação: [Teste de Programacao Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 21/05/2021](Teste_POO_2021.pdf)
+
+by [Alef Keuffer](https://github.com/Alef-Keuffer)
 
 ## 1 
 
