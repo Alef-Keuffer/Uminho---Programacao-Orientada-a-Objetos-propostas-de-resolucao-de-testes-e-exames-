@@ -462,7 +462,7 @@ bd = s -> s.changeLightIntensity(.25);
 
 ## 13
 
-$∑{#D:D ∈ division} = #{d:d ∈ devices}$
+$∑{#D:D ∈ division} ≟ #{d:d ∈ devices}$
 
 If the sum of the sizes of the divisions equals the number of distinct devices, then we know no device is in more than one division.
 
