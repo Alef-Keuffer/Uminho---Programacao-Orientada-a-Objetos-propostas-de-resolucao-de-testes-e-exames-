@@ -452,6 +452,12 @@ bd = s -> s.changeLightIntensity(.25);
 
 ## 13
 
+$∑{#D:D ∈ division} = #{d:d ∈ devices}$
+
+If the sum of the sizes of the divisions equals the number of distinct devices, then we know no device is in more than one division.
+
+Imagine we have 10 different devices and 2 divisions, 1 with size 5 and another with size 6. Then we know for sure one device must be in 2 divisions because we do not have 11 different devices. The argument is analogous to the [Pigeonhole principle](https://en.wikipedia.org/wiki/Pigeonhole_principle).
+
 ```java
 public boolean apenasNumaDivisao() {
     return this.devices
