@@ -306,7 +306,10 @@ class CasaInteligente {
     //...
     private static class DeviceNotFound extends Exception {}
     public void remove(String id) throws DeviceNotFound {
-        SmartDevice d = this.devices.stream().filter(s -> s.id().toString().equals(id)).findAny().orElseThrow(DeviceNotFound::new);
+        SmartDevice d = this.devices.stream()
+                                    .filter(s -> s.id().toString().equals(id))
+                                    .findAny()
+                                    .orElseThrow(DeviceNotFound::new);
         this.devices.remove(d);
         this.divisionDevices.values().forEach(c -> c.remove(d));
     }
