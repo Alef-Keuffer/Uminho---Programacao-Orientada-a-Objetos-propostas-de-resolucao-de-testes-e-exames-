@@ -81,6 +81,11 @@ Nao faz sentido, classes abstratas podem implementar metodos.
 
 (a) e (d) (penultima) sao consistentes. (a) trabalha diretamente com referencias nos getters e setters e (d) faz clones nos getters e setters.
 
+Errado (a), expomos estrutura de dados interna da class.
+
+e) Ultima usa uma estrategia de agregacao.
+
+
 ```java
 public void setConvocados(List<Jogador> conv) {
     this.convocados = conv;
@@ -449,7 +454,16 @@ bd = s -> s.changeLightIntensity(.25);
 
 ```java
 public boolean apenasNumaDivisao() {
-    return this.devices.stream().distinct().count() == this.divisionDevices.values().stream().map(Collection::size).reduce(0,Integer::sum);
+    return this.devices
+                .stream()
+                .distinct()
+                .count()
+                == 
+            this.divisionDevices
+                .values()
+                .stream()
+                .map(Collection::size)
+                .reduce(0,Integer::sum);
 }
 ```
 

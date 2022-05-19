@@ -367,10 +367,16 @@ possui a capacidade de colocar os outros epis´odos que pretende reproduzir numa
 espera
 
 
-
 ```java
 public void playEpisodio(String idPodCast, String nomeEpisodio) throws AlreadyPlayingException {
-    Episodio e = podcasts.stream().filter(idPodCast::equals).map(Episodio::getEpisodios).flatMap(Collection::stream).filter(e -> nomeEpisodio.equals(e.getNome())).findAny().get(); //throws
+    Episodio e = podcasts
+        .stream()
+        .filter(idPodCast::equals)
+        .map(Episodio::getEpisodios)
+        .flatMap(Collection::stream)
+        .filter(e -> nomeEpisodio.equals(e.getNome()))
+        .findAny()
+        .get(); //throws
 }
 ```
 
@@ -378,16 +384,16 @@ public void playEpisodio(String idPodCast, String nomeEpisodio) throws AlreadyPl
 
 ```java
 public void gravaInfoEpisodiosParaTocarMaisTarde(String fich) throws IOException {
-    BufferedWriter writer = new BufferedWriter(new FileWriter(fich));
+    PrintWriter writer = new PrintWriter(fich);
     users.values()
          .stream()
          .filter(u -> u instanceof UtilizadorPremium)
-         .map(u -> (UtilizadorPremium)u)
-         .map(u -> {
-            writer.append(u.getNome() + "\n");
-            u.waitQueue.stream().forEach(e -> writer.append(e.getNome() + " - " + e.getDuracao() + "\n"));
-            return u;
+         .map(u -> (UtilizadorPremium) u)
+         .forEach(u -> {
+             writer.write(u.getNome() + "\n");
+             u.waitQueue.forEach(e -> writer.write(e.getNome() + " - " + e.getDuracao() + "\n"));
          });
+    writer.flush();
     writer.close();
 }
 ```
