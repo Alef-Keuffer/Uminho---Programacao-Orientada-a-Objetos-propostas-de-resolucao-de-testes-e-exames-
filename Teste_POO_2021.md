@@ -439,9 +439,9 @@ class SmartBulbDimmable extends SmartDevice {
 ```java
 public void alteraInfo(Consumer<SmartBulbDimmable> bd) {
     this.devices()
-            .filter(v -> v instanceof SmartBulbDimmable)
-            .map(v -> (SmartBulbDimmable)v)
-            .forEach(bd);
+        .filter(v -> v instanceof SmartBulbDimmable)
+        .map(v -> (SmartBulbDimmable)v)
+        .forEach(bd);
 }
 ```
 
