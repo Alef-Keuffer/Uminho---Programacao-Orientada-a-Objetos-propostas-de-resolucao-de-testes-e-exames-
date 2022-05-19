@@ -333,7 +333,10 @@ public void remove(String id) throws DeviceNotFound {
 
 ```java
 public Iterator<SmartDevice> devicesPorConsumoCrescente() {
-    return this.devices.stream().map(SmartDevice::clone).sorted(Comparator.comparingDouble(SmartDevice::totalConsumo)).iterator();
+    return this.devices.stream()
+                       .map(SmartDevice::clone)
+                       .sorted(Comparator.comparingDouble(SmartDevice::totalConsumo))
+                       .iterator();
 }
 
 //Comparator.comparingDouble(SmartDevice::totalConsumo) ≡ (d1,d2) -> Double.compare(d1.totalConsumo(),d2.totalConsumo())
