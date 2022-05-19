@@ -381,7 +381,11 @@ class CasaInteligente {
         String id;
         Collection<SmartDevice> devices;
 
-        double totalConsumo() {return devices.stream().map(SmartDevice::totalConsumo).reduce(0.0,Double::sum);}
+        double totalConsumo() {
+            return devices.stream()
+                          .map(SmartDevice::totalConsumo)
+                          .reduce(0.0,Double::sum);
+        }
     }
 
     public String divisaoMaisEconomica() {
