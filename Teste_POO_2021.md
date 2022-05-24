@@ -1,12 +1,12 @@
 # Teste 20-21
 
-Proposta de Resolucao (Nao está corrijida).
+Proposed resolution (uncorrected).
 
-Avaliação: [Teste de Programacao Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 21/05/2021](Teste_POO_2021.pdf)
+Assessment: [Teste de Programacao Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 21/05/2021](Teste_POO_2021.pdf)
 
 by [Alef Keuffer](https://github.com/Alef-Keuffer)
 
-## 1 
+## 1
 
 Sabendo que o metodo mediaGolos(String numJogador) da classe Equipa (que calcula a media
 de golos do jogador indicado) nao devera produzir um valor para a media caso o numero de
@@ -351,7 +351,7 @@ public Iterator<SmartDevice> devicesPorConsumoCrescente() {
     public String divisaoMaisEconomica() {
 
         TreeSet<String> a = new TreeSet<>((k1, k2) -> {
-            
+
             double d1c = this.divisionDevices.get(k1).stream().reduce(0,Double::sum), d2c = this.divisionDevices.get(k1).stream().reduce(0,Double::sum);
             if (d1c == d2c) return d1.getId().compareTo(d2.getId());
             return Double.compare(k2, d1c);
@@ -474,7 +474,7 @@ public boolean apenasNumaDivisao() {
                 .stream()
                 .distinct()
                 .count()
-                == 
+                ==
             this.divisionDevices
                 .values()
                 .stream()

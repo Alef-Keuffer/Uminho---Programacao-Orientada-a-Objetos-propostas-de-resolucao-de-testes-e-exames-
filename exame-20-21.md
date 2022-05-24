@@ -1,8 +1,8 @@
 # Exame 20-21
 
-Proposta de Resolucao (Nao está corrijida).
+Proposed resolution (uncorrected).
 
-Avaliação: [Exame de Programação Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 14/06/2021](exame-20-21.pdf)
+Assessment: [Exame de Programação Orientada aos Objectos (A) MiEI e LCC - DI/UMinho 14/06/2021](exame-20-21.pdf)
 
 by [Alef Keuffer](https://github.com/Alef-Keuffer)
 
